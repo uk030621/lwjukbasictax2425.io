@@ -74,7 +74,7 @@ button:hover {
   }
   
   td {
-    /*border: 2px ridge rgb(21, 141, 215);*/ /* Add 1px solid black border to table, th, and td elements */
+    border: 2px ridge white; /* Add 1px solid black border to table, th, and td elements */
     padding: 4px; /* Add padding to table cells */
     width: 120px; /* Set a fixed width for the table cells */
     text-align: left; /* Center align the content within cells */
@@ -83,7 +83,7 @@ button:hover {
   /* Style for even rows */
   th {
     padding: 4px;
-    /*border: 2px ridge rgb(21, 141, 215);*/ /* Add 1px solid black border to table, th, and td elements */
+    border: 2px ridge white; /* Add 1px solid black border to table, th, and td elements */
     text-align: left; /* Center align the content within cells */
     font-size: small; 
   }
@@ -107,6 +107,7 @@ button:hover {
 }
 #checkboxWrapper {
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 .scotland {

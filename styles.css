@@ -21,7 +21,7 @@ body {
 
 .image {
     opacity: 1;/* Add any specific styling for the image */
-    border-radius: 10px;
+    border-radius: 15px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
@@ -29,15 +29,19 @@ body {
 input {
     padding: 5px;
     margin-bottom: 0px;
-    border: 2px ridge rgb(21, 141, 215);
+    border: 2px ridge gray;
     border-radius: 5px;
     margin-left: 10px;
     font-size: small;
     background-color: #fff;
   }
 
+input:hover{
+  background-color: lightgreen;
+}
+
 button {
-padding: 4px 10px;
+padding: 3px 10px;
 margin-left: 7px;
 opacity: 1;
 background-color:white;
@@ -48,10 +52,10 @@ border-radius: 6px;
 }
 
 button:hover {
-    background-color:  #007bff;
+    background-color:  lightgreen;
     opacity: 1;
-    border: #0056b3 solid 2px;
-    color: white;
+    border: black solid 2px;
+    color: black;
 }
 
 .container {
@@ -72,9 +76,10 @@ button:hover {
     border-collapse: collapse; /* Collapse border spacing */
     table-layout: auto; /* Allow cells to size based on content */
   }
+
   
   td {
-    border: 2px ridge white; /* Add 1px solid black border to table, th, and td elements */
+    /*border: 2px ridge white; /* Add 1px solid black border to table, th, and td elements */
     padding: 4px; /* Add padding to table cells */
     width: 120px; /* Set a fixed width for the table cells */
     text-align: left; /* Center align the content within cells */
@@ -83,9 +88,10 @@ button:hover {
   /* Style for even rows */
   th {
     padding: 4px;
-    border: 2px ridge white; /* Add 1px solid black border to table, th, and td elements */
+    /*border: 2px ridge white; /* Add 1px solid black border to table, th, and td elements */
     text-align: left; /* Center align the content within cells */
-    font-size: small; 
+    font-size: small;
+    
   }
 
 .checkboxLabel {
@@ -113,4 +119,10 @@ button:hover {
 .scotland {
   color:white;
   font-size: small;
+}
+
+
+.row1:hover {
+  background-color: lightgray;
+  color: black;
 }

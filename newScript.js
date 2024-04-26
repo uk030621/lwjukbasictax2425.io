@@ -27,11 +27,32 @@ document.getElementById("calculateButton").addEventListener("click", function() 
     getScotland();
   });
 
+
+  // script.js
+function updateDateTime() {
+  var datetimeElement = document.getElementById('datetime');
+  var now = new Date();
+  var dateTimeString = now.toLocaleString(); // Adjust format as needed
+  datetimeElement.innerHTML = 'Current Date and Time: ' + dateTimeString;
+}
+
+window.onload = function() {
+  updateDateTime(); // Initial update
+  setInterval(updateDateTime, 1000); // Update every second
+};
+
+
 // This function is responsible for displaying the table where the tax breakdown will be shown. 
 // It sets the CSS property display to block for the table element, making it visible on the web page. 
 // Without this call, the table would remain hidden until the button is clicked.
+
+const incomeInput = document.getElementById('income');
+
 function showTable() {
+  if (incomeInput.value.trim() !== '') 
   document.getElementById("resultTable1").style.display = "block"; // Set display property to "block" to show the table
+  if (incomeInput.value.trim() !== '')
+  document.getElementById("closeButton").style.display = "block"; // Set display property to "block" to show the close page button
 }
 
 function showTable2() {
@@ -39,6 +60,7 @@ function showTable2() {
 }
 
 function showEffectiveTax() {
+  if (incomeInput.value.trim() !== '')
   document.getElementById("effectiveTax").style.display = "block"; // Set display property to "block" to show the table
 }
 
@@ -49,6 +71,7 @@ function showEffectiveTax2() {
 // This function is responsible for showing the heading "UK Results Table:". Similar to showTable(), it sets the CSS property display 
 // to block for the heading element, making it visible on the web page.
 function showResultsHeading() {
+  if (incomeInput.value.trim() !== '')
   document.getElementById("resultsHeading").style.display = "block"; // Set display property to "block" to show the heading
 }
 // This function is responsible for showing the heading "Scotland Results Table:". Similar to showTable(), it sets the CSS property display 
@@ -77,7 +100,12 @@ document.getElementById("income").addEventListener("input", function() {
   }
 });
 
+const closeButton = document.getElementById('closeButton');
 
+closeButton.addEventListener('click', function() {
+    // Close the current window
+    window.close();
+});
 
 // This function formats the results (comma and decimal points)
 function formatNumberWithDecimalPlacesAndCommas(number, decimalPlaces) {

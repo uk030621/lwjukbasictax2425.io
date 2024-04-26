@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 10px;
     color: white;
     background-color: black;
   }
@@ -13,7 +13,7 @@ body {
 
 .container2 {
   display: inline-block;
-  width: 50%; /* Each container takes 50% width */
+  width: 100%; /* Each container takes 50% width */
   padding: 5px; /* Add some padding for spacing */
   font-size: small;
 }
@@ -26,18 +26,18 @@ body {
     margin-bottom: 10px;
 }
 
-input {
+input {  
     padding: 5px;
     margin-bottom: 0px;
     border: 2px ridge gray;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 0px;
     font-size: small;
-    background-color: #fff;
+    background-color: lightcyan;
   }
 
 input:hover{
-  background-color: lightgreen;
+  background-color: white;
 }
 
 button {
@@ -52,17 +52,17 @@ border-radius: 6px;
 }
 
 button:hover {
-    background-color:  lightgreen;
+    background-color:  lightcyan;
     opacity: 1;
     border: black solid 2px;
     color: black;
 }
 
 .container {
-  
   align-items: center;
   margin-left: 0px;
   margin-bottom: 20px;
+  padding-left: 0px;
 }
 
 .small-text {
@@ -94,10 +94,14 @@ button:hover {
     
   }
 
+#checkboxWrapper{
+  margin-bottom: 10px;
+}
+
 .checkboxLabel {
   display: none;
   margin-top: 0;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-bottom: 9px;
   opacity: 0.7;
   font-size: medium;
@@ -105,15 +109,13 @@ button:hover {
 
 #resultsHeading {
   margin-bottom: 5px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
 }
 
 #resultsHeading2 {
   margin-bottom: 5px;
-}
-#checkboxWrapper {
-  display: inline-block;
-  margin-bottom: 15px;
+  margin-left: 0px;
 }
 
 .scotland {
@@ -125,4 +127,20 @@ button:hover {
 .row1:hover {
   background-color: lightgray;
   color: black;
+}
+
+#datetime {
+  font-size: 12px;
+  color: white;
+  opacity: 0.7;
+}
+
+#myCheckbox, #myCheckbox2,#myCheckbox3,#myCheckbox4{
+ margin-left: 0px;
+}
+
+#closeButton{
+  display: none; /* Initially hide the table */
+  margin-left: 0px;
+  margin-bottom: 20px;
 }

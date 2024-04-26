@@ -47,12 +47,17 @@ window.onload = function() {
 // Without this call, the table would remain hidden until the button is clicked.
 
 const incomeInput = document.getElementById('income');
+const resultTable1 = document.getElementById('resultTable1');
+const closeButton = document.getElementById('closeButton');
 
 function showTable() {
-  if (incomeInput.value.trim() !== '') 
-  document.getElementById("resultTable1").style.display = "block"; // Set display property to "block" to show the table
-  if (incomeInput.value.trim() !== '')
-  document.getElementById("closeButton").style.display = "block"; // Set display property to "block" to show the close page button
+  if (incomeInput.value.trim() !== '') {
+    resultTable1.style.display = "block";
+    closeButton.style.display = "block";
+  } else {
+    resultTable1.style.display = "none";
+    closeButton.style.display = "none";
+  }
 }
 
 function showTable2() {
@@ -100,7 +105,7 @@ document.getElementById("income").addEventListener("input", function() {
   }
 });
 
-const closeButton = document.getElementById('closeButton');
+//const closeButton = document.getElementById('closeButton');
 
 closeButton.addEventListener('click', function() {
     // Close the current window
